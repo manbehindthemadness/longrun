@@ -9,5 +9,5 @@ pip install longrun
 import longrun
 
 async def my_task_launcher(task, *args, **kwargs): \
-*Tabspace*result = await longrun.slow_exec(task, *args, **kwargs) \
-*Tabspace*return result
+&emsp;result = await longrun.slow_exec(task, *args, **kwargs) \
+&emsp;return result
