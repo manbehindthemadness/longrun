@@ -1,10 +1,11 @@
 # longrun
 A simple utility allowing long running tasks to be executed without blocking
 
-**install**
+**install:**
+
 pip install longrun
 
-**example usage**
+**example usage:**
 
 import longrun
 
