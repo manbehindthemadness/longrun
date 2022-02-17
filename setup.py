@@ -18,7 +18,7 @@ with open(os.path.join(here, 'README.md')) as f:
 
 URL = "https://github.com/manbehindthemadness/longrun"
 DESCRIPTION = "A simple utility allowing long running tasks to be executed without blocking"
-LONG_DESCRIPTION = README
+LONG_DESCRIPTION = "See readme"
 
 PACKAGES = find_packages()
 
@@ -39,7 +39,7 @@ classifiers = [
 ]
 
 install_requires = [
-    "python_version > '3.4'"
+    "python_version >= '3.5'"
 ]
 
 setup(
@@ -47,7 +47,7 @@ setup(
     version=VERSION,
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
-    long_description_content_type="text/x-rst",
+    long_description_content_type='text/markdown',
     python_requires=">=3.5",
     classifiers=classifiers,
     keywords="async, asyncio, blocking",
