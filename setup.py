@@ -2,7 +2,7 @@
 """
 Setup
 """
-
+import os
 from setuptools import setup, find_packages
 
 NAME = "longrun"
@@ -11,12 +11,16 @@ __version__ = "0.1"
 VERSION = __version__
 
 
-URL = "https://github.com/manbehindthemadness/longrun"
-DESCRIPTION = "tasks without blocking"
-LONG_DESCRIPTION = """A simple utility allowing long running tasks to be executed without blocking """
-LONG_DESCRIPTION += VERSION
+here = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(here, 'README.md')) as f:
+    README = f.read()
 
-PACKAGES = find_packages(include=['longrun', 'longrun.*'])
+
+URL = "https://github.com/manbehindthemadness/longrun"
+DESCRIPTION = "A simple utility allowing long running tasks to be executed without blocking"
+LONG_DESCRIPTION = README
+
+PACKAGES = find_packages()
 
 classifiers = [
     # Get more strings from
@@ -51,5 +55,7 @@ setup(
     url=URL,
     license="BSD",
     packages=PACKAGES,
+    package_dir={'': 'src'},
     install_requires=install_requires,
+    py_modules=['longrun']
 )

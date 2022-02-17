@@ -1,1 +1,6 @@
 /longrun.egg-info/
+/src/longrun.egg-info/
+/dist/
+/build/
+/.idea/
+/__pycache__/
