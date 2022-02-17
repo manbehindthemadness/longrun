@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 
 NAME = "longrun"
 
-__version__ = "0.3a"
+__version__ = "0.3a1"
 VERSION = __version__
 
 
@@ -34,6 +34,7 @@ setup(
     long_description_content_type='text/markdown',
     keywords="async, asyncio, blocking",
     author="manbehindthemadness",
+    author_email="manbehindthemadness@gmail.com",
     url=URL,
     license="BSD",
     packages=PACKAGES,
